@@ -19,11 +19,14 @@ namespace FarmSystem.Test
         {
             Console.WriteLine($"{AnimalType} is running");
         }
-      
 
         public virtual void Walk()
         {
             Console.WriteLine($"{AnimalType} is walking");
+        }
+        public virtual void Talk()
+        {
+            Console.WriteLine($"{AnimalType} can not talk!");
         }
     }
 }

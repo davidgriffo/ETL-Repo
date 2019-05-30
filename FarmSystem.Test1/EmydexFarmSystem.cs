@@ -34,7 +34,16 @@ namespace FarmSystem.Test
         public void MakeNoise()
         {
             //Test 2 : Modify this method to make the animals talk
-            Console.WriteLine("There are no animals in the farm");
+            if (farmAnimals.Count > 0)
+            {
+                foreach (var animal in farmAnimals)
+                {
+                    animal.Talk();
+                }
+            }
+            else
+                Console.WriteLine("There are no animals in the farm");
+
         }
 
         //TEST 3

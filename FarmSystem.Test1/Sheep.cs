@@ -6,15 +6,11 @@ namespace FarmSystem.Test
     {
         public Sheep() : base(_name: "Sheep", _noOfLegs: 4) { }
 
-        public void Talk()
+        public override void Talk()
         {
             Console.WriteLine("Sheep says baa!");
         }
-
-        public void Run()
-        {
-            Console.WriteLine("Sheep is running");
-        }
+              
 
     }
 

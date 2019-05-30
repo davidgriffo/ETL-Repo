@@ -7,11 +7,10 @@ namespace FarmSystem.Test
         public Cow() : base(_name: "Cow", _noOfLegs: 4) { }
         
 
-        public void Talk()
+        public override void Talk()
         {
             Console.WriteLine("Cow says Moo!");
         }
-             
 
         public void ProduceMilk()
         {

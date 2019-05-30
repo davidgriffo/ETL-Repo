@@ -8,7 +8,7 @@ namespace FarmSystem.Test
        
 
 
-        public void Talk()
+        public override void Talk()
         {
             Console.WriteLine("Horse says neigh!");
         }
