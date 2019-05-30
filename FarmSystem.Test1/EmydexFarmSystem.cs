@@ -49,7 +49,18 @@ namespace FarmSystem.Test
         //TEST 3
         public void MilkAnimals()
         {
-            Console.WriteLine("Cannot identify the farm animals which can be milked");
+            var counter = 0;
+            foreach (var animal in farmAnimals)
+            {
+                if (animal is IMilkableAnimal)
+                {
+                    counter += 1;
+                    var milkingcow = (IMilkableAnimal)animal;
+                    milkingcow.ProduceMilk();
+                }
+            }
+            Console.WriteLine($"{counter} animals were milked!");
+          
         }
 
         //TEST 4

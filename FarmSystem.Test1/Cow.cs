@@ -12,7 +12,7 @@ namespace FarmSystem.Test
             Console.WriteLine("Cow says Moo!");
         }
 
-        public void ProduceMilk()
+        public  void ProduceMilk()
         {
             Console.WriteLine("Cow produced milk");
         }
