@@ -1,44 +1,18 @@
 ﻿using System;
 
-namespace FarmSystem.Test1
+namespace FarmSystem.Test
 {
-    public class Hen 
+    public class Hen : Animal
     {
-        private string _id;
-        private int _noOfLegs = 4;
 
-
-        public string Id
+        public Hen() : base("Hen", 2)
         {
-            get { return _id; }
-            set
-            {
-                _id = value;
-            }
+
         }
         
+        public  void Talk() => Console.WriteLine("Hen say CLUCKAAAAAWWWWK!");
 
+       
 
-        public int NoOfLegs
-        {
-            get
-            {
-                return _noOfLegs;
-            }
-            set
-            {
-                _noOfLegs = 4;
-            }
-        }
-
-        public void Talk()
-        {
-            Console.WriteLine("Hen say CLUCKAAAAAWWWWK!");
-        }
-
-        public void Run()
-        {
-            Console.WriteLine("Hen is running");
-        }
     }
 }
