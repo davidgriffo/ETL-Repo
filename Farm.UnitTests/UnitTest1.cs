@@ -8,7 +8,7 @@ namespace Farm.UnitTests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestCows()
+        public void TestCowsAreMilkable()
         {
             //arrange
             var cow = new Cow();

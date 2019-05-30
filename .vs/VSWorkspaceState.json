@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Farm.UnitTests",
+    "\\FarmSystem.Test1",
+    "\\TestResults"
   ],
-  "SelectedNode": "\\Emydex.FarmSystem.Test.sln",
+  "SelectedNode": "\\Farm.UnitTests\\Farm.UnitTests.csproj",
   "PreviewInSolutionExplorer": false
 }
