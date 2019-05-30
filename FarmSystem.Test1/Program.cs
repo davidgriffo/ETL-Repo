@@ -25,7 +25,7 @@ namespace FarmSystem.Test
         private static void Excercise1()
         {
             Console.WriteLine("Exercise 1 : Press any key when it is time to open the Farm to animals");
-            Console.ReadKey();
+            Console.ReadKey(true);
             var farm = new EmydexFarmSystem();
             Cow cow = new Cow();
             farm.Enter(cow);
@@ -38,7 +38,7 @@ namespace FarmSystem.Test
 
             Sheep sheep = new Sheep();
             farm.Enter(sheep);
-            Console.ReadKey();
+            Console.ReadKey(true);
         }
 
         /***************************************************************************************************************
@@ -61,7 +61,7 @@ namespace FarmSystem.Test
         {
             //TODO : Apply OOP concepts and modify the code below to get the required output 
             Console.WriteLine("Exercise 2 : Press any key to scare the animals in the farm");
-            Console.ReadKey();
+            Console.ReadKey(true);
             var farm = new EmydexFarmSystem();
             Cow cow = new Cow();
             farm.Enter(cow);
@@ -76,7 +76,7 @@ namespace FarmSystem.Test
             farm.Enter(sheep);
 
             farm.MakeNoise();
-            Console.ReadKey();
+            Console.ReadKey(true);
         }
 
         /*****************************************************************************************************************
@@ -98,7 +98,7 @@ namespace FarmSystem.Test
         {
             //TODO : Apply OOP concepts and modify the code below to get the required output 
             Console.WriteLine("Exercise 3 : Press any key when it is time to milk animals");
-            Console.ReadKey();
+            Console.ReadKey(true);
             var farm = new EmydexFarmSystem();
             Cow cow = new Cow();
             farm.Enter(cow);
@@ -113,7 +113,7 @@ namespace FarmSystem.Test
             farm.Enter(sheep);
 
             farm.MilkAnimals();
-            Console.ReadKey();
+            Console.ReadKey(true);
         }
 
         /****************************************************************************************************
@@ -139,7 +139,7 @@ namespace FarmSystem.Test
         {
             //TODO : Apply OOP concepts and modify the code below to get the required output 
             Console.WriteLine("Exercise 4: Press any key to free all animals");
-            Console.ReadKey();
+            Console.ReadKey(true);
             var farm = new EmydexFarmSystem();
             Cow cow = new Cow();
             farm.Enter(cow);
@@ -154,7 +154,7 @@ namespace FarmSystem.Test
             farm.Enter(sheep);
 
             farm.ReleaseAllAnimals();
-            Console.ReadKey();
+            Console.ReadKey(true);
         }
 
     }

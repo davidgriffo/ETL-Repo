@@ -19,8 +19,6 @@ namespace FarmSystem.Test
             //Hold all the animals so it is available for future activities
             if (animal != null)
             {
-
-
                 farmAnimals.Add(animal);
                 Console.WriteLine($"{animal.AnimalType} has entered the Emydex farm");
             }
@@ -59,14 +57,24 @@ namespace FarmSystem.Test
                     milkingcow.ProduceMilk();
                 }
             }
-            Console.WriteLine($"{counter} animals were milked!");
+            // this line removed as it is not part of the requested output.
+            //Console.WriteLine($"{counter} animals were milked!");
           
         }
 
         //TEST 4
         public void ReleaseAllAnimals()
         {
-            Console.WriteLine("There are still animals in the farm, farm is not free");
+            foreach (var animal in farmAnimals)
+            {
+                Console.WriteLine($"{animal.AnimalType} has left the farm");
+               
+            }
+            farmAnimals.Clear();
+            if (farmAnimals.Count > 0)
+                Console.WriteLine($"There are {farmAnimals.Count} animals in the farm");
+            else
+                Console.WriteLine("Emydex Farm is now empty");
         }
     }
 }

@@ -14,7 +14,7 @@ namespace FarmSystem.Test
 
         public  void ProduceMilk()
         {
-            Console.WriteLine("Cow produced milk");
+            Console.WriteLine("Cow was milked!");
         }
               
 
