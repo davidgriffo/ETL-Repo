@@ -1,17 +1,35 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace FarmSystem.Test1
+namespace FarmSystem.Test
 {
     public class EmydexFarmSystem
     {
+        private System.Collections.Generic.List<Animal> farmAnimals;
+
+        public EmydexFarmSystem()
+        {
+            this.farmAnimals = new List<Animal>();
+        }
+
         //TEST 1
-        public void Enter(object animal)
+        public void Enter(Animal animal)
         {
             //TODO Modify the code so that we can display the type of animal (cow, sheep etc) 
             //Hold all the animals so it is available for future activities
-            Console.WriteLine("Animal has entered the Emydex farm");
+            if (animal != null)
+            {
+
+
+                farmAnimals.Add(animal);
+                Console.WriteLine($"{animal.AnimalType} has entered the Emydex farm");
+            }
+            else
+            {
+                Console.WriteLine($"this animal is a null and does not belong in the farm (it has been shot)");
+            }
         }
-     
+
         //TEST 2
         public void MakeNoise()
         {
@@ -28,7 +46,7 @@ namespace FarmSystem.Test1
         //TEST 4
         public void ReleaseAllAnimals()
         {
-           Console.WriteLine("There are still animals in the farm, farm is not free");
+            Console.WriteLine("There are still animals in the farm, farm is not free");
         }
     }
 }
